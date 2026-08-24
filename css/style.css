@@ -1,4 +1,6 @@
 
+/* cambiar ya que es solo una base o de inspiracion hecha con ia */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -101,7 +103,7 @@ img:hover {
     filter: brightness(1.1);
     transform: scale(1.02);
 }
-
+/* 
 form {
     background-color: #ffffff;
     max-width: 600px;
@@ -110,7 +112,7 @@ form {
     border-radius: 12px;
     border: 1px solid #dddddd;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
+} */
 
 label {
     display: block;
