@@ -1,15 +1,42 @@
 <!-- catalogo de pokemones para adoptar Esteban -->
- <!DOCTYPE html>
- <html lang="es">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemones</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
- </head>
- <body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pokemones</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+   <style>
+    /* icono de pokebola que me robe de por ahi */
+     .btn-pokeball {
+       display: inline-flex;
+       align-items: center;
+       gap: 0.5rem;
+       background-color: #fff;
+       border: 2px solid #222;
+       border-radius: 2rem;
+       padding: 0.3rem 1rem 0.3rem 0.3rem;
+       font-weight: 600;
+       color: #222;
+       transition: transform 0.2s ease;
+     }
+     .btn-pokeball:hover {
+       background-color: #f5f5f5;
+       color: #222;
+     }
+     .btn-pokeball:hover .pokeball-icon {
+       transform: rotate(25deg);
+     }
+     .pokeball-icon {
+       width: 1.6rem;
+       height: 1.6rem;
+       transition: transform 0.2s ease;
+     }
+   </style>
+</head>
+<body>
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
@@ -41,6 +68,192 @@
     </div>
   </div>
 </nav>
-    
- </body>
- </html>
+
+<h1 style="text-align: center;">Nuestros Pokemones</h1>
+<p style="text-align: center;">Explora los diferentes Pokemones de nuestro refugio que pueda ayudarte en tu aventura</p>
+
+<div class="d-flex gap-5 justify-content-center flex-wrap align-items-start">
+
+  <!-- Charmander -->
+  <div class="card" style="width: 24rem;">
+    <img src="img/Charmander.png" class="card-img-top" alt="Charmander">
+    <div class="card-body">
+      <h5 class="card-title text-center">Charmander</h5>
+      <p class="card-text text-center">
+        <!-- boton de pokebola integrado -->
+        <button class="btn btn-pokeball" data-bs-toggle="collapse" data-bs-target="#infoCharmander">
+          <svg class="pokeball-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="46" fill="#fff" stroke="#222" stroke-width="4"/>
+            <path d="M4 50a46 46 0 0 1 92 0z" fill="#e3350d" stroke="#222" stroke-width="4"/>
+            <line x1="4" y1="50" x2="96" y2="50" stroke="#222" stroke-width="4"/>
+            <circle cx="50" cy="50" r="14" fill="#fff" stroke="#222" stroke-width="4"/>
+            <circle cx="50" cy="50" r="6" fill="#fff" stroke="#222" stroke-width="3"/>
+          </svg>
+          Información
+        </button>
+      </p>
+      <div class="collapse" id="infoCharmander">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Charmander es un pokemon de fuego de estatura baja que ronda los 60 centimetros y tiene un peso maximo de 8.5 kg</li>
+          <li class="list-group-item">Es un pokemon muy amable e intenso con un aspecto similar a la de un lagarto bipedo.</li>
+          <li class="list-group-item">La llama de su cola es la que llamara siempre tu atencion pues demuestra su estado de salud y emociones.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Froakie -->
+  <div class="card" style="width: 24rem;">
+    <img src="img/Froakie.png" class="card-img-top" alt="Froakie">
+    <div class="card-body">
+      <h5 class="card-title text-center">Froakie</h5>
+      <p class="card-text text-center">
+        <button class="btn btn-pokeball" data-bs-toggle="collapse" data-bs-target="#infoFroakie">
+          <svg class="pokeball-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="46" fill="#fff" stroke="#222" stroke-width="4"/>
+            <path d="M4 50a46 46 0 0 1 92 0z" fill="#e3350d" stroke="#222" stroke-width="4"/>
+            <line x1="4" y1="50" x2="96" y2="50" stroke="#222" stroke-width="4"/>
+            <circle cx="50" cy="50" r="14" fill="#fff" stroke="#222" stroke-width="4"/>
+            <circle cx="50" cy="50" r="6" fill="#fff" stroke="#222" stroke-width="3"/>
+          </svg>
+          Información
+        </button>
+      </p>
+      <div class="collapse" id="infoFroakie">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Froakie es un pokemon de agua de estatura muy baja que ronda los 30 centimetros y tiene un peso maximo de 7kg</li>
+          <li class="list-group-item">Es un pokemon muy tranquilo y atento aunque parezca despreocupado con un aspecto similar a la de una rana</li>
+          <li class="list-group-item">Tiende a saltar mucho y lanzar burbujas en su estado de confort y buena salud</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Leafeon -->
+  <div class="card" style="width: 24rem;">
+    <img src="img/Leafeon.png" class="card-img-top" alt="Leafeon">
+    <div class="card-body">
+      <h5 class="card-title text-center">Leafeon</h5>
+      <p class="card-text text-center">
+        <button class="btn btn-pokeball" data-bs-toggle="collapse" data-bs-target="#infoLeafeon">
+          <svg class="pokeball-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="46" fill="#fff" stroke="#222" stroke-width="4"/>
+            <path d="M4 50a46 46 0 0 1 92 0z" fill="#e3350d" stroke="#222" stroke-width="4"/>
+            <line x1="4" y1="50" x2="96" y2="50" stroke="#222" stroke-width="4"/>
+            <circle cx="50" cy="50" r="14" fill="#fff" stroke="#222" stroke-width="4"/>
+            <circle cx="50" cy="50" r="6" fill="#fff" stroke="#222" stroke-width="3"/>
+          </svg>
+          Información
+        </button>
+      </p>
+      <div class="collapse" id="infoLeafeon">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Leafeon es un pokemon de planta de estatura baja que ronda el metro y tiene un peso maximo de 25.5kg</li>
+              <li class="list-group-item">Es un pokemon muy tranquilo y atento con un cuerpo delgado y con similitudes a las hojas</li>
+              <li class="list-group-item">Es una de las evoluciones del pokemon Eevee en su version planta</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Squirtle -->
+  <div class="card" style="width: 24rem;">
+    <img src="img/Squirtle.png" class="card-img-top" alt="Squirtle">
+    <div class="card-body">
+      <h5 class="card-title text-center">Squirtle</h5>
+      <p class="card-text text-center">
+        <button class="btn btn-pokeball" data-bs-toggle="collapse" data-bs-target="#infoSquirtle">
+          <svg class="pokeball-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="46" fill="#fff" stroke="#222" stroke-width="4"/>
+            <path d="M4 50a46 46 0 0 1 92 0z" fill="#e3350d" stroke="#222" stroke-width="4"/>
+            <line x1="4" y1="50" x2="96" y2="50" stroke="#222" stroke-width="4"/>
+            <circle cx="50" cy="50" r="14" fill="#fff" stroke="#222" stroke-width="4"/>
+            <circle cx="50" cy="50" r="6" fill="#fff" stroke="#222" stroke-width="3"/>
+          </svg>
+          Información
+        </button>
+      </p>
+      <div class="collapse" id="infoSquirtle">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Squirtle es un pokemon de agua de estatura baja que ronda los 50 centimetros y tiene un peso maximo de 9kg</li>
+              <li class="list-group-item">Es un pokemon muy jugueton y activo con un aspecto similar a la de una tortuga</li>
+              <li class="list-group-item">Es un pokemon leal y alegre que con confianza puede ser un compañero ideal</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Eevee -->
+  <div class="card" style="width: 24rem;">
+    <img src="img/Eevee.png" class="card-img-top" alt="Eevee">
+    <div class="card-body">
+      <h5 class="card-title text-center">Eevee</h5>
+      <p class="card-text text-center">
+        <button class="btn btn-pokeball" data-bs-toggle="collapse" data-bs-target="#infoEevee">
+          <svg class="pokeball-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="46" fill="#fff" stroke="#222" stroke-width="4"/>
+            <path d="M4 50a46 46 0 0 1 92 0z" fill="#e3350d" stroke="#222" stroke-width="4"/>
+            <line x1="4" y1="50" x2="96" y2="50" stroke="#222" stroke-width="4"/>
+            <circle cx="50" cy="50" r="14" fill="#fff" stroke="#222" stroke-width="4"/>
+            <circle cx="50" cy="50" r="6" fill="#fff" stroke="#222" stroke-width="3"/>
+          </svg>
+          Información
+        </button>
+      </p>
+      <div class="collapse" id="infoEevee">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Eevee es un pokemon normal que adquiere tipo con su evolucion</li>
+              <li class="list-group-item">Es un pokemon de estatura baja que ronda los 30 centimentros y pesa en un estado saludable unos 6.5kg</li>
+              <li class="list-group-item">Eevee es un pokemon cercano, fiel y jugueton ademas de ser un pokemon muy inteligente y de alta adaptabilidad</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cyndaquil -->
+  <div class="card" style="width: 24rem;">
+    <img src="img/Cyndaquil.png" class="card-img-top" alt="Cyndaquil">
+    <div class="card-body">
+      <h5 class="card-title text-center">Cyndaquil</h5>
+      <p class="card-text text-center">
+        <button class="btn btn-pokeball" data-bs-toggle="collapse" data-bs-target="#infoCynda">
+          <svg class="pokeball-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="46" fill="#fff" stroke="#222" stroke-width="4"/>
+            <path d="M4 50a46 46 0 0 1 92 0z" fill="#e3350d" stroke="#222" stroke-width="4"/>
+            <line x1="4" y1="50" x2="96" y2="50" stroke="#222" stroke-width="4"/>
+            <circle cx="50" cy="50" r="14" fill="#fff" stroke="#222" stroke-width="4"/>
+            <circle cx="50" cy="50" r="6" fill="#fff" stroke="#222" stroke-width="3"/>
+          </svg>
+          Información
+        </button>
+      </p>
+      <div class="collapse" id="infoCynda">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Cyndaquil es un pokemon de fuego de estatura baja que ronda los 50 centimetros y tiene un peso maximo de 7.9kg</li>
+              <li class="list-group-item">Es un pokemon muy tranquilo y timido con un aspecto similar a la de un roedor</li>
+              <li class="list-group-item">Tiende a asustarse mucho y sus llamas demuestran si esta en buenas condiciones o para demostrar su estado de animo</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
