@@ -22,6 +22,28 @@ body {
   transform: scale(1.05); 
   
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
-    
+
   z-index: 10; 
 }
+
+
+
+card-poke-img {
+  height: 200px;
+  object-fit: contain;
+}
+
+.card-poke {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-poke:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+.bg-type-fuego { background-color: #f49f3ef6; }
+.bg-type-agua { background-color: #86bdf5; }
+.bg-type-normal { background-color: #f3ead6ab; }
+.bg-type-lucha { background-color: #f4632ada; }
+.bg-type-fantasma { background-color: #a36ef2; }
+.bg-type-planta{background-color: #61f383;}
