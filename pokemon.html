@@ -9,6 +9,7 @@
    <link rel="stylesheet" href="css/buttons.css">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+   <script src="js/sonidos.js" defer></script>
 </head>
 <body>
 
@@ -48,6 +49,8 @@
 
 <div class="d-flex gap-5 justify-content-center flex-wrap align-items-start">
 
+<audio id="reproductorPokedex"></audio>
+
   <!-- Charmander -->
   <div class="card" style="width: 24rem;">
     <img src="img/Charmander.png" class="card-img-top" alt="Charmander">
@@ -66,7 +69,7 @@
           Información
         </button>
       </p>
-      <div class="collapse" id="infoCharmander">
+      <div class="collapse pokedex-collapse" id="infoCharmander" data-audio="audio/Charmander_Crie.mp3">
         <ul class="list-group list-group-flush">
           <li class="list-group-item">Charmander es un pokemon de fuego de estatura baja que ronda los 60 centimetros y tiene un peso maximo de 8.5 kg</li>
           <li class="list-group-item">Es un pokemon muy amable e intenso con un aspecto similar a la de un lagarto bipedo.</li>
@@ -75,6 +78,8 @@
       </div>
     </div>
   </div>
+
+
 
   <!-- Froakie -->
   <div class="card" style="width: 24rem;">
@@ -259,8 +264,67 @@
   </div>
 
 
-  <!-- agregar Gengar -->
-  <!-- agregar Growlithe -->
+  <!-- Gengar -->
+   <div class="card" style="width: 24rem;">
+    <img src="img/Gengar.png" class="card-img-top" alt="Gengar">
+    <div class="card-body">
+      <h5 class="card-title text-center">Gengar</h5>
+      <p class="card-text text-center">
+        <button class="btn btn-pokeball" data-bs-toggle="collapse" data-bs-target="#infoGengar">
+          <svg class="pokeball-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="46" fill="#fff" stroke="#222" stroke-width="4"/>
+            <path d="M4 50a46 46 0 0 1 92 0z" fill="#e3350d" stroke="#222" stroke-width="4"/>
+            <line x1="4" y1="50" x2="96" y2="50" stroke="#222" stroke-width="4"/>
+            <circle cx="50" cy="50" r="14" fill="#fff" stroke="#222" stroke-width="4"/>
+            <circle cx="50" cy="50" r="6" fill="#fff" stroke="#222" stroke-width="3"/>
+          </svg>
+          Información
+        </button>
+      </p>
+      <div class="collapse" id="infoGengar">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Gengar es un pokemon fantasma que mide aproximadamente 1.5 metros y pesa en estado saludable unos 40.5kg</li>
+              <li class="list-group-item">Es un pokemon siniestro que le gusta asustar a la gente ademas de ser muy divertido en confianza</li>
+              <li class="list-group-item">Gengar es un pokemon muy burlon y observador por lo que se recomienda discrecion</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Growlithe -->
+   <div class="card" style="width: 24rem;">
+    <img src="img/Growlithe.png" class="card-img-top" alt="Growlithe">
+    <div class="card-body">
+      <h5 class="card-title text-center">Growlithe</h5>
+      <p class="card-text text-center">
+        <button class="btn btn-pokeball" data-bs-toggle="collapse" data-bs-target="#infoGrowlithe">
+          <svg class="pokeball-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="46" fill="#fff" stroke="#222" stroke-width="4"/>
+            <path d="M4 50a46 46 0 0 1 92 0z" fill="#e3350d" stroke="#222" stroke-width="4"/>
+            <line x1="4" y1="50" x2="96" y2="50" stroke="#222" stroke-width="4"/>
+            <circle cx="50" cy="50" r="14" fill="#fff" stroke="#222" stroke-width="4"/>
+            <circle cx="50" cy="50" r="6" fill="#fff" stroke="#222" stroke-width="3"/>
+          </svg>
+          Información
+        </button>
+      </p>
+      <div class="collapse" id="infoGrowlithe">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Growlithe es un pokemon de fuego que mide aproximadamente 70cm y pesa en estado saludable unos 19kg</li>
+              <li class="list-group-item">Es un pokemon similar a un cachorro, tiene un olfato excepcional que le ayuda al cazar</li>
+              <li class="list-group-item">Growlithe es u pokemon muy desconfiado y observador pero una vez en confianza es el pokemon mas leal y valiente que tendras</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
 </div>
 
